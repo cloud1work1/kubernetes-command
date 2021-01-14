@@ -12,3 +12,9 @@
 - kubectl get svc
 - kubectl get nodes
 - kubectl get nodes -o wide  
+
+## Kubernetes Deployment modification
+ - kubectl get deployment <deployment-name> -o yml
+ - kubectl set image deployment/<deployment-name> <container-name>=<container-image> --record=true
+ - kubectl rollout status deployment/<deployment-name>
+ - kubectl rollout history deployment/<deployment-name> 
