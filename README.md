@@ -21,3 +21,9 @@
  
 ## Kubernetes Edit Deployment using edit command
 -  kubectl edit deployment/&lt;Deployment-Name&gt; --record=true =&gt; change spec.containers.image (yml format)
+
+## Kubernetes create and work with pods
+- kubectl run &lt;pod-name&gt; --image &lt;image-name&gt; --generator=run-pod/v1
+- kubectl run &lt;pod-name&gt; --image &lt:image-name&gt;
+- kubectl describe pod &lt;pod-name&gt;
+- kubectl delete pod &lt;pod-name&gt;
