@@ -18,6 +18,9 @@
  - kubectl set image deployment/&lt;deployment-name&gt; &lt;container-name&gt;=&lt;container-image&gt; --record=true
  - kubectl rollout status deployment/&lt;deployment-name&gt;
  - kubectl rollout history deployment/&lt;deployment-name&gt; 
+ - kubectl rollout undo deployment/&lt;deployment-name&gt;
+ - kubectl rollout undo deployment/&lt;deployment-name&gt; --to-revision=&lt;revision-number&gt;
+ - kubetcl rollout restart deployment/&lt;deployment-name&gt;
  
 ## Kubernetes Edit Deployment using edit command
 -  kubectl edit deployment/&lt;Deployment-Name&gt; --record=true =&gt; change spec.containers.image (yml format)
