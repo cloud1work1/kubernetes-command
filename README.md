@@ -30,3 +30,8 @@
 - kubectl run &lt;pod-name&gt; --image &lt:image-name&gt;
 - kubectl describe pod &lt;pod-name&gt;
 - kubectl delete pod &lt;pod-name&gt;
+
+## EKS Cluster
+- eksctl create cluster --name=&lt;node-name&gt; --region=&lt;region-name&gt; --zones=&lt;zone-name-comma-separated&gt; --without=nodegroup
+- eksctl get clusters
+
