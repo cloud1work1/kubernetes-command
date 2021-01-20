@@ -21,6 +21,11 @@
  - kubectl rollout undo deployment/&lt;deployment-name&gt;
  - kubectl rollout undo deployment/&lt;deployment-name&gt; --to-revision=&lt;revision-number&gt;
  - kubetcl rollout restart deployment/&lt;deployment-name&gt;
+ - kubectl rollout pause deployment &lt;deployment-name&gt;
+ - kubectl set resources deployment/&lt;deployment-name&gt; -c=kubeginx --limits=cpu=200m,memory=512mi
+ - kubectl rollout resume deployment/&lt;deployment-name&gt;
+ - kubectl delete deployment &lt;deployment-name&gt;
+ - kubectl delete svc &lt;service-name&gt;
  
 ## Kubernetes Edit Deployment using edit command
 -  kubectl edit deployment/&lt;Deployment-Name&gt; --record=true =&gt; change spec.containers.image (yml format)
@@ -37,4 +42,5 @@
 ## EKS Cluster
 - eksctl create cluster --name=&lt;node-name&gt; --region=&lt;region-name&gt; --zones=&lt;zone-name-comma-separated&gt; --without=nodegroup
 - eksctl get clusters
-
+- eksctl utils associate-iam-oidc-provider --region &lt;region-name&gt; --cluster &lt;cluster-name&gt; --approve
+- eksctl create nodegroup 
