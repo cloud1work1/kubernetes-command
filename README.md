@@ -38,9 +38,15 @@
 - kubectl expose pod &lt;pod-name&gt; --type=NodePort --port=&lt;Port-Number&gt; --name=&lt;Service-Name&gt;
 - kubectl expose pod &lt;pod-name&gt; --type=NodePort --port=&lt;Port-Number&gt; --target-port=&lt;exposed-port-number&gt; --name=&lt;Service-name&gt;
 
+- kubectl config view --minify
+
+
 
 ## EKS Cluster
 - eksctl create cluster --name=&lt;node-name&gt; --region=&lt;region-name&gt; --zones=&lt;zone-name-comma-separated&gt; --without=nodegroup
 - eksctl get clusters
 - eksctl utils associate-iam-oidc-provider --region &lt;region-name&gt; --cluster &lt;cluster-name&gt; --approve
-- eksctl create nodegroup 
+- eksctl create nodegroup
+- eksctl get nodegroup --cluster=&ltcluster-name&gt;
+
+
