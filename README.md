@@ -39,6 +39,13 @@
 - kubectl expose pod &lt;pod-name&gt; --type=NodePort --port=&lt;Port-Number&gt; --target-port=&lt;exposed-port-number&gt; --name=&lt;Service-name&gt;
 
 - kubectl config view --minify
+- kubectl logs &lt;pod-name&gt;
+- kubectl logs -f &lt;pod-name&gt;
+- kubectl exec -it &lt;pod-name&gt; -- /bin/sh
+- kubectl exec -it &lt;pod-name&gt; &lt;command-to-execute&gt;
+- kubectl get pod &lt;pod-name&gt; -o yaml
+- kubetcl get svc &lt;service-name&gt; -o yaml
+
 
 
 
