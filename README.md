@@ -45,6 +45,9 @@
 - kubectl exec -it &lt;pod-name&gt; &lt;command-to-execute&gt;
 - kubectl get pod &lt;pod-name&gt; -o yaml
 - kubetcl get svc &lt;service-name&gt; -o yaml
+- kubectl get all
+- kubectl delete pod &lt;pod-name&gt;
+- kubectl delete svd &ltservice-name&gt;
 
 
 
